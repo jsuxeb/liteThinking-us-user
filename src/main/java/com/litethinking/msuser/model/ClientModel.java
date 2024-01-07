@@ -1,14 +1,15 @@
 package com.litethinking.msuser.model;
 
-import jakarta.persistence.*;
+
 import lombok.Data;
+import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "client")
 public class ClientModel {
 
-    @jakarta.persistence.Id
+    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(length = 3)
@@ -25,6 +26,7 @@ public class ClientModel {
     private String address;
     @Column(length = 60)
     private String city;
+
 
 
 }
